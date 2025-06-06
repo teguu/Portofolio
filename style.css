@@ -315,49 +315,4 @@ footer {
   font-size: 0.9rem;
 }
 
-@media (max-width: 768px) {
-  .top-content {
-    text-align: left;
-    gap: 40px;
-    flex-wrap: wrap;
-  }
-
-  .profile-pic {
-    width: 180px;
-    height: 180px;
-  }
-
-  .experience-grid {
-    margin-left: 0;
-  }
-
-  .experience-card {
-    margin-left: 0;
-  }
-
-  .experience-images-1,
-  .experience-images-2,
-  .experience-images-3,
-  .experience-images-4 {
-    justify-content: flex-start;
-    margin-right: 0;
-  }
-
-  .experience-images-1 img,
-  .experience-images-2 img,
-  .experience-images-3 img,
-  .experience-images-4 img {
-    width: 100%;
-    max-width: 330px;
-    height: auto;
-  }
-
-  .navbar ul {
-  display: flex;
-  flex-direction: row; /* Tambahkan ini */
-  justify-content: center;
-  gap: 40px;
-  list-style: none;
-  }
-}
 
