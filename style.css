@@ -318,26 +318,48 @@ footer {
 @media (max-width: 768px) {
 
   .top-content {
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
-  
-  .experience-grid {
-    grid-template-columns: 1fr; /* satu kolom */
+
+  .text-block {
+    text-align: center;
   }
 
-  .experience-card, 
-  .experience-images-1, 
-  .experience-images-2,
-  .experience-images-3,
-  .experience-images-4 {
+  .profile-pic {
+    max-width: 100%;
+    width: 150px;
+    height: auto;
+  }
+
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-card {
     margin-left: 0;
     margin-right: 0;
-    justify-content: center;
   }
 
   .experience-images-1,
+  .experience-images-2,
+  .experience-images-3,
   .experience-images-4 {
-    justify-content: center;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+    align-items: center;
+  }
+
+  .experience-images-1 img,
+  .experience-images-2 img,
+  .experience-images-3 img,
+  .experience-images-4 img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
   }
 }
+
 
