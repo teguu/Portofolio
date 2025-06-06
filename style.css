@@ -316,6 +316,11 @@ footer {
 }
 
 @media (max-width: 768px) {
+
+  .top-content {
+    text-align: center;
+  }
+  
   .experience-grid {
     grid-template-columns: 1fr; /* satu kolom */
   }
