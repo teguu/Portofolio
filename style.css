@@ -317,18 +317,19 @@ footer {
 
 @media (max-width: 768px) {
   .top-content {
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
+    flex-direction: row; /* tetap sejajar kiri-kanan */
+    text-align: left;
+    gap: 40px;
+    flex-wrap: wrap;
   }
 
   .profile-pic {
-    width: 140px;
-    height: 140px;
+    width: 180px;
+    height: 180px;
   }
 
   .experience-grid {
-    grid-template-columns: 1fr; /* ubah jadi satu kolom */
+    grid-template-columns: 1fr 1fr; /* tetap dua kolom */
     margin-left: 0;
   }
 
@@ -340,7 +341,7 @@ footer {
   .experience-images-2,
   .experience-images-3,
   .experience-images-4 {
-    justify-content: center;
+    justify-content: flex-start;
     margin-right: 0;
   }
 
@@ -349,12 +350,13 @@ footer {
   .experience-images-3 img,
   .experience-images-4 img {
     width: 100%;
-    max-width: 280px;
+    max-width: 330px;
     height: auto;
   }
 
   .navbar ul {
-    flex-direction: column;
-    gap: 15px;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
   }
 }
