@@ -323,13 +323,7 @@ footer {
     gap: 15px;
     padding: 10px 0;
   }
-
-  .navbar ul {
-  flex-wrap: wrap;
-  overflow-x: auto;
-  padding: 0 10px;
-  }
-
+  
   .navbar {
     padding: 10px;
   }
