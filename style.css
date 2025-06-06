@@ -346,18 +346,24 @@ footer {
   .experience-images-2,
   .experience-images-3,
   .experience-images-4 {
-    flex-direction: column;
+    flex-direction: row;      /* Tetap horizontal */
+    flex-wrap: wrap;          /* Supaya bisa 2 baris */
+    justify-content: center;  /* Tengah */
     margin-left: 0;
     margin-right: 0;
     align-items: center;
   }
 
-  .experience-images-1 img,
   .experience-images-2 img,
-  .experience-images-3 img,
-  .experience-images-4 img {
-    width: 100%;
-    height: auto;
+  .experience-images-3 img {
+    width: auto;
+    height: 45%;
     max-width: 300px;
+  }
+  .experience-images-1 img,
+  .experience-images-4 img {
+    width: auto;
+    height: 45%;
+    max-width: 150px; 
   }
 }
