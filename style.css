@@ -14,17 +14,24 @@ body {
 .navbar {
   background-color: black;
   padding: 15px 0;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .navbar ul {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 40px;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
 }
 
 .navbar a {
@@ -142,10 +149,10 @@ body {
 
 .experience-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Dua kolom */
+  grid-template-columns: 1fr 1fr;
   gap: 40px;
   margin-top: 30px;
-  align-items: start; /* Supaya top-align */
+  align-items: start; 
 }
 
 .experience-card {
@@ -153,7 +160,7 @@ body {
   padding: 20px;
   border-radius: 12px;
   transition: transform 0.5s ease, box-shadow 0.5s;
-  width: 100%; /* gunakan lebar penuh kolom */
+  width: 100%;
   height: auto;
   margin-left: 100px; 
 }
@@ -171,10 +178,10 @@ ul {
 
 .experience-images-1 {
   display: flex;
-  flex-direction: row;        /* Biar sejajar ke kanan */
-  justify-content: flex-end;  /* Menyusun ke kanan */
-  gap: 10px;                  /* Jarak antar gambar */
-  flex-wrap: wrap;            /* Biar responsif */
+  flex-direction: row;        
+  justify-content: flex-end; 
+  gap: 10px;                  
+  flex-wrap: wrap;          
   margin-top: 10px;
   margin-right: 100px;
 }
@@ -190,17 +197,17 @@ ul {
 
 .experience-images-2 {
   display: flex;
-  flex-direction: column;       /* dari atas ke bawah */
-  align-items: center;          /* posisikan gambar ke tengah */
-  gap: 20px;                    /* jarak antar gambar */
+  flex-direction: column;     
+  align-items: center;        
+  gap: 20px;                   
   margin-top: 20px;
-  margin-right: -60px;              /* hilangkan margin kanan */
+  margin-right: -60px;              
 }
 
 .experience-images-2 img {
-  width: 100%;                  /* lebar penuh container */
-  max-width: 330px;             /* batasi agar tidak terlalu besar */
-  height: auto;                 /* biar proporsional */
+  width: 100%;                 
+  max-width: 330px;             
+  height: auto;                
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 2px 6px rgb(0, 0, 0);
@@ -209,17 +216,17 @@ ul {
 
 .experience-images-3 {
   display: flex;
-  flex-direction: column;       /* dari atas ke bawah */
-  align-items: center;          /* posisikan gambar ke tengah */
-  gap: 20px;                    /* jarak antar gambar */
+  flex-direction: column;       
+  align-items: center;         
+  gap: 20px;                    
   margin-top: 20px;
-  margin-right: -60px;              /* hilangkan margin kanan */
+  margin-right: -60px;              
 }
 
 .experience-images-3 img {
-  width: 100%;                  /* lebar penuh container */
-  max-width: 330px;             /* batasi agar tidak terlalu besar */
-  height: auto;                 /* biar proporsional */
+  width: 100%;               
+  max-width: 330px;           
+  height: auto;                 
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 2px 6px rgb(0, 0, 0);
@@ -228,10 +235,10 @@ ul {
 
 .experience-images-4 {
   display: flex;
-  flex-direction: row;        /* Biar sejajar ke kanan */
-  justify-content: flex-end;  /* Menyusun ke kanan */
-  gap: 10px;                  /* Jarak antar gambar */
-  flex-wrap: wrap;            /* Biar responsif */
+  flex-direction: row;        
+  justify-content: flex-end;  
+  gap: 10px;                
+  flex-wrap: wrap;           
   margin-top: 10px;
   margin-right: 100px;
 }
@@ -242,20 +249,20 @@ ul {
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgb(0, 0, 0);
-  transition: transform 0.5s ease; /* durasi hover */
+  transition: transform 0.5s ease; 
 }
 
 .experience-images-1 img:hover {
-  transform: scale(1.1); /* efek membesar */
+  transform: scale(1.1); 
 }
 .experience-images-2 img:hover {
-  transform: scale(1.1); /* efek membesar */
+  transform: scale(1.1); 
 }
 .experience-images-3 img:hover {
-  transform: scale(1.1); /* efek membesar */
+  transform: scale(1.1); 
 }
 .experience-images-4 img:hover {
-  transform: scale(1.1); /* efek membesar */
+  transform: scale(1.1); 
 }
 
 /* EDUCATION */
@@ -316,7 +323,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-
+  
   .top-content {
     flex-direction: column;
     align-items: center;
@@ -328,9 +335,9 @@ footer {
   }
 
   .profile-pic {
+    width: 250px;
+    height: 250px;
     max-width: 100%;
-    width: 150px;
-    height: auto;
   }
 
   .experience-grid {
@@ -346,9 +353,9 @@ footer {
   .experience-images-2,
   .experience-images-3,
   .experience-images-4 {
-    flex-direction: row;      /* Tetap horizontal */
-    flex-wrap: wrap;          /* Supaya bisa 2 baris */
-    justify-content: center;  /* Tengah */
+    flex-direction: row;     
+    flex-wrap: wrap;         
+    justify-content: center;  
     margin-left: 0;
     margin-right: 0;
     align-items: center;
