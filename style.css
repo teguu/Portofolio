@@ -317,7 +317,6 @@ footer {
 
 @media (max-width: 768px) {
   .top-content {
-    flex-direction: row; /* tetap sejajar kiri-kanan */
     text-align: left;
     gap: 40px;
     flex-wrap: wrap;
@@ -329,7 +328,6 @@ footer {
   }
 
   .experience-grid {
-    grid-template-columns: 1fr 1fr; /* tetap dua kolom */
     margin-left: 0;
   }
 
