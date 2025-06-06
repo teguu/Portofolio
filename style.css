@@ -316,18 +316,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-
-  .navbar ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    padding: 10px 0;
-  }
-  
-  .navbar {
-    padding: 10px;
-  }
-  
   .top-content {
     flex-direction: column;
     align-items: center;
