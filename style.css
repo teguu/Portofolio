@@ -315,4 +315,24 @@ footer {
   font-size: 0.9rem;
 }
 
+@media (max-width: 768px) {
+  .experience-grid {
+    grid-template-columns: 1fr; /* satu kolom */
+  }
+
+  .experience-card, 
+  .experience-images-1, 
+  .experience-images-2,
+  .experience-images-3,
+  .experience-images-4 {
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: center;
+  }
+
+  .experience-images-1,
+  .experience-images-4 {
+    justify-content: center;
+  }
+}
 
